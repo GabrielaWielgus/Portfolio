@@ -2,4 +2,5 @@ Portfolio
 
 HTML5, CSS, React, Material UI
 
-[Portfolio.pdf](https://github.com/GabrielaWielgus/Portfolio/files/11791137/Portfolio.pdf)
+
+![Portfolio](https://github.com/GabrielaWielgus/Portfolio/assets/75125063/1fa120dc-fe37-482a-94db-4dd8bbdd8c57)
