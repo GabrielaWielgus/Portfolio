@@ -6,7 +6,7 @@ import {ReactComponent as CharacterSVG} from '../../assets/character.svg';
 
 const WelcomeSection = () => {
     return(
-        <section>
+        <section className="welcome-section" id="welcome-section">
             <h1> Hello, My name is Gabriela Wielgus,</h1>
             <div className="wrapper">
                 <div className="static-txt">and I'm a</div>

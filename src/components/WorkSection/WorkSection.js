@@ -1,15 +1,22 @@
-import React from "react";
+import React from 'react';
 import './WorkSection.css';
-import {ReactComponent as RoomSVG} from '../../assets/room.svg'
+import Slider from './Slider';
+import { ReactComponent as RoomSVG } from '../../assets/room.svg';
 
 const WorkSection = () => {
-    return(
-        <section>
-            <h1> WORK SECTION</h1>
-            <p>Something about work</p>
-            <RoomSVG/>
-        </section>
-    );
-}
+  return (
+    <section className="work-section" id="work-section">
+      <div className="work-content">
+        <div className="work-description">
+          <h1>Professional and Research Experience</h1>
+          <Slider />
+        </div>
+        <div className="work-image">
+          <RoomSVG />
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default WorkSection;

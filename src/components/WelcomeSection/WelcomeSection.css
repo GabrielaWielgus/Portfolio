@@ -1,11 +1,15 @@
-html, body {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+    letter-spacing: 0.24px;
 }
 
 section{
     position: relative;
     min-height: 100vh; 
+    padding: 100px;
 }
 
 .wrapper{
@@ -17,6 +21,7 @@ h1{
     font-size: 73px;
     font-weight: 400;
 }
+
 .wrapper .static-txt{
     color:white;
     font-size: 73px;
@@ -49,6 +54,7 @@ h1{
 .dynamic-txts li span{
     position: relative;
 }
+
 .dynamic-txts li span::after{
     content:"";
     position: absolute;
