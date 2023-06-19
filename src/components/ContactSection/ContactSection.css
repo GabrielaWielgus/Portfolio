@@ -1,0 +1,41 @@
+.contact-section {
+    position: relative;
+    min-height: 100vh; 
+    background-image: url('../../assets/bgContact.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+    gap: 150px;
+}
+  
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.icon-text {
+    color: white;
+    font-size: 22px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+
+}
+  
+.mail-icon,
+.linkedin-icon,
+.github-icon {
+    width: 270px !important;
+    height: 270px !important;
+    fill: white !important;
+}
