@@ -8,12 +8,12 @@ const WorkSection = () => {
     <section className="work-section" id="work-section">
       <div className="work-content">
         <div className="work-description">
-          <h1>Professional and Research Experience</h1>
-          <Slider />
+          <h1 className='header-work-section'>Professional and Research Experience</h1>
         </div>
         <div className="work-image">
-          <RoomSVG />
+          <RoomSVG/>
         </div>
+        <Slider />
       </div>
     </section>
   );

@@ -15,7 +15,10 @@
 }
 
 .technology-image svg {
-    width: 100%; 
+    position: relative;
+    bottom:680px;
+    left: 54%;
+    scale: 1.8;
     height: auto;
 }
 

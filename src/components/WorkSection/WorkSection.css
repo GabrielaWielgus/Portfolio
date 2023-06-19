@@ -1,3 +1,8 @@
+.header-work-section{
+  position: absolute;
+  top: 18%;
+  left:43%;
+}
 .work-section {
     height: 100vh;
     display: flex;
@@ -16,18 +21,10 @@
     max-height: 100vh; 
   }
   
-  .slider-container {
-    flex: 1;
-    max-height: 100%; 
-    overflow: auto;
-    flex-grow: 1; /* Dodaj flex-grow: 1, aby slider rozszerzył się i zajął więcej miejsca po lewej stronie */
-  }
-  
   .work-image {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    max-height: 100%; 
-    margin-left: auto;
+    position: relative;
+    top:15%;
+    left: -14%;
+    scale: 1.6;
   }
   

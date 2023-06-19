@@ -17,7 +17,10 @@ const WelcomeSection = () => {
                     <li><span>Project manager</span></li>
                 </ul>
             </div>
-            <CharacterSVG/>
+            <div className="welcome-image">
+                <CharacterSVG/>
+            </div>
+            
         </section>
     );
 }

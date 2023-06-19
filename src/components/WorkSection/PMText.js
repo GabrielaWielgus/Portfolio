@@ -1,7 +1,8 @@
 const PMText = (
   <div>
-       I've had the privilege of working at AGH as a <b>Project Manager</b>. 
-       As a <b>Project Manager</b>, I lead project execution, ensuring seamless team communication and collaboration with stakeholders. My role encompasses progress reporting, overseeing project milestones, and maintaining financial and administrative compliance. I excel in data processing, documentation management, and procurement coordination, all while providing meticulous support for audits.
+    <p>
+    As a <strong>Project Manager</strong>, I excel in driving project success through effective communication and meticulous management. My responsibilities include overseeing project progress, managing expenses, and ensuring seamless collaboration with stakeholders. I analyze data, maintain documentation, and provide clarity for audit purposes. From contracts to travel arrangements, I handle diverse project aspects with precision, delivering outstanding results from start to finish.
+    </p>
   </div>
 );
 

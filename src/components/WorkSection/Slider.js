@@ -1,39 +1,51 @@
 import React, { useState } from 'react';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import './Slider.css';
 import AdministrativeOfficeSpecjalistText from './AdministratOsText';
 import YoungResearcherText from './YoungResearcherText';
 import PMText from './PMText';
 import DeveloperText from './DeveloperText';
 import DesignerText from './DesignerText';
-
+import { IconButton } from '@mui/material';
 
 const Slider = () => {
+
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
+
   const data = [
     {
-      title: '2017-2021 Administrative Office Specialist',
+      title: `Administrative Office Specialist`,
       description: AdministrativeOfficeSpecjalistText,
     },
     {
-      title: 'Since May 2021 - now, Young Researcher',
+      title: 'Young Researcher',
       description: YoungResearcherText,
     },
     {
-      title: 'Since May 2021 - now, Project Manager',
+      title: 'Project Manager',
       description: PMText,
-    },
-    {
-      title: 'Designer',
-      description: DesignerText,
     },
     {
       title: 'Developer',
       description: DeveloperText,
     },
+    {
+      title: 'Designer',
+      description: DesignerText,
+    },
   ];
 
-  const handleClick = (index) => {
-    setActiveIndex(index);
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : data.length - 1));
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex < data.length - 1 ? prevIndex + 1 : 0));
+  };
+
+  const handleAnimationEnd = () => {
+    setIsClicked(false); // Ustawienie stanu isClicked na false po zakończeniu animacji
   };
 
   return (
@@ -49,14 +61,26 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="slider-buttons">
-        {data.map((item, index) => (
-          <button
-            key={index}
-            className={`slider-button ${index === activeIndex ? 'active' : ''}`}
-            onClick={() => handleClick(index)}
-          ></button>
-        ))}
+      <div className="slider-navigation">
+        <IconButton
+        disableFocusRipple
+        disableRipple
+        onClick={handlePrev}
+        style={{ backgroundColor: "transparent"}}
+        onAnimationEnd={handleAnimationEnd}
+        >
+        <NavigateNextIcon className={'navigate-icon'} id="navigate-icon-prev"/>
+        </IconButton>
+
+        <IconButton
+        disableFocusRipple
+        disableRipple
+        onClick={handleNext}
+        style={{ backgroundColor: "transparent"}}
+        onAnimationEnd={handleAnimationEnd}
+        >
+        <NavigateNextIcon className='navigate-icon' id="navigate-icon-next"/>
+        </IconButton>
       </div>
     </div>
   );

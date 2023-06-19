@@ -66,6 +66,13 @@ h1{
     animation: typing 3s steps(15) infinite;
 }
 
+.welcome-image{
+    position: absolute;
+    left:15%;
+    top: 55%;
+    scale: 3.8;
+}
+
 @keyframes typing {
     40%, 60%{
       left: calc(100% + 30px);
