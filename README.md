@@ -9,6 +9,3 @@ This is a portfolio website built using HTML5, CSS, React, and Material UI. The 
 - React: Used as the JavaScript library for building the website's components and managing the application's state.
 - Material UI: Used for implementing pre-designed UI components and applying a consistent design system.
 
-
-
-[Portfolio.pdf](https://github.com/GabrielaWielgus/Portfolio/files/11791273/Portfolio.pdf)
