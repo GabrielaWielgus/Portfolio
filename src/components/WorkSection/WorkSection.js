@@ -7,13 +7,12 @@ const WorkSection = () => {
   return (
     <section className="work-section" id="work-section">
       <div className="work-content">
-        <div className="work-description">
-          <h1 className='header-work-section'>Professional and Research Experience</h1>
+      <div className="svg-container">
+          <RoomSVG className="work-image" />
         </div>
-        <div className="work-image">
-          <RoomSVG/>
+        <div className="slider-container">
+          <Slider />
         </div>
-        <Slider />
       </div>
     </section>
   );

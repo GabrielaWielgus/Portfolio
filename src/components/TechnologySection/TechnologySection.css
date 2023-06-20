@@ -14,12 +14,13 @@
     margin-left: 20px; 
 }
 
-.technology-image svg {
+.technology-image{
     position: relative;
     bottom:680px;
     left: 54%;
     scale: 1.8;
     height: auto;
+    background-color: red;
 }
 
 .technology-text{

@@ -9,7 +9,8 @@
 section{
     position: relative;
     min-height: 100vh; 
-    padding: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
 .wrapper{
@@ -66,12 +67,17 @@ h1{
     animation: typing 3s steps(15) infinite;
 }
 
-.welcome-image{
-    position: absolute;
-    left:15%;
-    top: 55%;
-    scale: 3.8;
+.container-welcome-svg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.welcome-img{
+    width: 100%;
+    height: auto;
+}
+
 
 @keyframes typing {
     40%, 60%{

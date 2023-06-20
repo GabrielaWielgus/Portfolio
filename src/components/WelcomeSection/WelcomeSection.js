@@ -16,9 +16,9 @@ const WelcomeSection = () => {
                     <li><span>Young researcher</span></li>
                     <li><span>Project manager</span></li>
                 </ul>
-            </div>
-            <div className="welcome-image">
-                <CharacterSVG/>
+            </div> 
+            <div className="container-welcome-svg"> 
+                <CharacterSVG className="welcome-image"/>
             </div>
             
         </section>

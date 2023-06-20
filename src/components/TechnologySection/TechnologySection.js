@@ -11,10 +11,8 @@ const TechnologySection = () => {
                     <h1>Skills & Technology</h1>
                     <p className="technology-text">{technologyText}</p>
                 </div>
-            </div>
-            <div className="technology-image">
-                    <LaptopSVG />
-            </div>
+            </div>   
+            <LaptopSVG className="technology-image"/>
         </section>
     );
 };
