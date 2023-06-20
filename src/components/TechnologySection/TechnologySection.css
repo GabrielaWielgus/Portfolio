@@ -1,3 +1,6 @@
+.technology-section{
+  padding-top: 8%;
+}
 .technology-content {
     display: flex;
     align-items: center;
@@ -19,9 +22,9 @@
   }
   
   .technology-text {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 22px;
     text-align: justify;
     line-height: 1.4;
   }
