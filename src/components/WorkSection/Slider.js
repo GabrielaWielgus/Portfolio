@@ -9,15 +9,9 @@ import DesignerText from './DesignerText';
 import { IconButton } from '@mui/material';
 
 const Slider = () => {
-
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isClicked, setIsClicked] = useState(false);
 
   const data = [
-    {
-      title: `Administrative Office Specialist`,
-      description: AdministrativeOfficeSpecjalistText,
-    },
     {
       title: 'Young Researcher',
       description: YoungResearcherText,
@@ -27,12 +21,16 @@ const Slider = () => {
       description: PMText,
     },
     {
+      title: 'Designer',
+      description: DesignerText,
+    },
+    {
       title: 'Developer',
       description: DeveloperText,
     },
     {
-      title: 'Designer',
-      description: DesignerText,
+      title: `Administrative Office Specialist`,
+      description: AdministrativeOfficeSpecjalistText,
     },
   ];
 
@@ -42,10 +40,6 @@ const Slider = () => {
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex < data.length - 1 ? prevIndex + 1 : 0));
-  };
-
-  const handleAnimationEnd = () => {
-    setIsClicked(false); // Ustawienie stanu isClicked na false po zakończeniu animacji
   };
 
   return (
@@ -63,23 +57,21 @@ const Slider = () => {
       </div>
       <div className="slider-navigation">
         <IconButton
-        disableFocusRipple
-        disableRipple
-        onClick={handlePrev}
-        style={{ backgroundColor: "transparent"}}
-        onAnimationEnd={handleAnimationEnd}
+          disableFocusRipple
+          disableRipple
+          onClick={handlePrev}
+          style={{ backgroundColor: 'transparent' }}
         >
-        <NavigateNextIcon className={'navigate-icon'} id="navigate-icon-prev"/>
+          <NavigateNextIcon className={'navigate-icon'} id="navigate-icon-prev" />
         </IconButton>
 
         <IconButton
-        disableFocusRipple
-        disableRipple
-        onClick={handleNext}
-        style={{ backgroundColor: "transparent"}}
-        onAnimationEnd={handleAnimationEnd}
+          disableFocusRipple
+          disableRipple
+          onClick={handleNext}
+          style={{ backgroundColor: 'transparent' }}
         >
-        <NavigateNextIcon className='navigate-icon' id="navigate-icon-next"/>
+          <NavigateNextIcon className="navigate-icon" id="navigate-icon-next" />
         </IconButton>
       </div>
     </div>

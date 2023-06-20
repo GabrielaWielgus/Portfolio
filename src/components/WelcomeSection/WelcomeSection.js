@@ -19,8 +19,7 @@ const WelcomeSection = () => {
             </div> 
             <div className="container-welcome-svg"> 
                 <CharacterSVG className="welcome-image"/>
-            </div>
-            
+            </div>   
         </section>
     );
 }

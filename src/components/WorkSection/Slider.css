@@ -2,12 +2,17 @@
   width: 100%;
   display: flex;
   margin-top: -5%;
+  margin-left: 3%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: justify;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
+}
+
+.slider-item h2{
+  margin-bottom: 10px;
 }
 
 .slider-item h2,
@@ -36,7 +41,6 @@
 .slider-navigation {
   position: absolute;
   left: 50%;
-  bottom: -30%; 
   transform: translateX(-50%);
   z-index: 1;
   display: flex;
@@ -52,7 +56,7 @@
   fill: white !important;
 }
 
-.slider-navigation:hover .navigate-icon {
+#navigate-icon-prev:hover, #navigate-icon-next:hover {
   fill: #ccfc9d !important;
 }
 
