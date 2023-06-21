@@ -22,12 +22,3 @@
   display: flex;
   justify-content: flex-end; 
 }
-
-.svg-container {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 5%;
-  margin-bottom: 10%;
-}
