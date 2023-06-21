@@ -1,6 +1,6 @@
 import React from "react";
 import './WelcomeSection.css';
-import {ReactComponent as CharacterSVG} from '../../assets/character.svg';
+import Spline from '@splinetool/react-spline';
 
 
 
@@ -18,7 +18,7 @@ const WelcomeSection = () => {
                 </ul>
             </div> 
             <div className="container-welcome-svg"> 
-                <CharacterSVG className="welcome-image"/>
+                <Spline scene="https://prod.spline.design/jmGP7kdcEmP8uqFd/scene.splinecode" />
             </div>   
         </section>
     );
