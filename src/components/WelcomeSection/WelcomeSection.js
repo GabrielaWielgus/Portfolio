@@ -2,8 +2,6 @@ import React from "react";
 import './WelcomeSection.css';
 import Spline from '@splinetool/react-spline';
 
-
-
 const WelcomeSection = () => {
     return(
         <section className="welcome-section" id="welcome-section">
@@ -16,10 +14,8 @@ const WelcomeSection = () => {
                     <li><span>Young researcher</span></li>
                     <li><span>Project manager</span></li>
                 </ul>
-            </div> 
-            <div className="container-welcome-svg"> 
-                <Spline scene="https://prod.spline.design/jmGP7kdcEmP8uqFd/scene.splinecode" />
             </div>   
+            <Spline scene="https://prod.spline.design/jmGP7kdcEmP8uqFd/scene.splinecode" />
         </section>
     );
 }

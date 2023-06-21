@@ -12,7 +12,7 @@ const LandingPage = () => {
         <Header />
         <NavBar/>
         <WelcomeSection />
-        <WorkSection />
+        <WorkSection/>
         <TechnologySection />
         <ContactSection />
     </div>
