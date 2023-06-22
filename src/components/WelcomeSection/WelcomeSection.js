@@ -15,7 +15,10 @@ const WelcomeSection = () => {
                     <li><span>Project manager</span></li>
                 </ul>
             </div>   
-            <Spline scene="https://prod.spline.design/jmGP7kdcEmP8uqFd/scene.splinecode" />
+            <div className="spline-container">
+                <Spline scene="https://prod.spline.design/jmGP7kdcEmP8uqFd/scene.splinecode"/>
+            </div>
+            
         </section>
     );
 }

@@ -22,3 +22,35 @@
   display: flex;
   justify-content: flex-end; 
 }
+
+@media screen and (min-width: 376px) and (max-width: 420px){
+  
+  .work-content {
+    max-width: 80%; 
+    height: 70%;
+    padding: 0 90px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+ 
+  .work-content {
+    max-width: 80%; 
+    height: 70%;
+    padding: 0 90px;
+  }
+}
+
+@media screen and (max-width: 319px){
+ 
+  .work-content {
+    max-width: 80%; 
+    height: 60%;
+    padding: 0 90px;
+  }
+  
+  .spline-container-work{
+    display: none;
+  }
+}
+
