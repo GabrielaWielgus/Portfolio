@@ -15,7 +15,7 @@ section{
 
 .spline-container{
     height: 130%;
-    margin-top:-15%;
+   
 }
 
 .wrapper{
@@ -27,7 +27,7 @@ h1{
     color:white;
     font-size: 73px;
     font-weight: 400;
-    padding-top: 10%;
+    padding-top: 8%;
     padding-left: 5%;
 }
 
@@ -84,7 +84,48 @@ h1{
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 420px){
+@media screen and (min-width: 1024px) and (max-width: 1300px){
+   
+    .spline-container{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px){
+   
+    h1{
+        padding-top:1%;
+        font-size: 35px;
+    }
+    .wrapper .static-txt{
+        
+        font-size: 35px;
+    }
+
+    .dynamic-txts li{
+        font-size: 35px;
+        height: 50px;
+    }
+    
+    .wrapper .dynamic-txts{
+        margin-left: 15px;
+        height: 50px;
+        line-height: 43px;
+    }
+
+    .spline-container{
+        height: 150%;
+        margin-top: 2%;
+        margin-left: -30%;
+    }
+    @keyframes slide{
+        100%{
+            top:-200px;
+        }
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 699px){
    
     h1{
         font-size: 39px;
@@ -101,7 +142,7 @@ h1{
     
     .wrapper .dynamic-txts{
         position: absolute;
-        top:38%;
+        top:39%;
         margin-left: 0;
         height: 50px;
         line-height: 43px;
@@ -157,7 +198,6 @@ h1{
 @media screen and (max-width: 319px){
    
     h1{
-        margin-top:-25%;
         font-size: 35px;
     }
     .wrapper .static-txt{
@@ -172,16 +212,16 @@ h1{
     
     .wrapper .dynamic-txts{
         position: absolute;
-        top:31%;
+        top:44%;
         margin-left: 0;
         height: 50px;
         line-height: 43px;
     }
 
     .spline-container{
-        height: 120%;
+        height: 110%;
         margin-top: 14%;
-        margin-left: -240%;
+        margin-left: -180%;
     }
 
     @keyframes slide{
@@ -189,9 +229,4 @@ h1{
             top:-200px;
         }
     }
-    @media screen and (orientation: landscape) {
-        body {
-          overflow: hidden; /* Hide the content when in landscape mode */
-        }
-      }
 }
