@@ -1,86 +1,84 @@
-.technology-section{
-  height: 120vh;
-}
+/* Aktualizacja stylizacji sekcji TechnologySection */
 
-.technology-content{
-  position: absolute;
-  padding-left: 2%;
-  top:10%;
-}
-
-.technology-description {
-    flex: 1;
-    color: white;
-}
+.technology-section {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
   
-.spline{
-    position: absolute;
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .column {
+    width: 48%;
+    padding: 10px;
+  }
+  
+  .column:nth-child(2) {
+    margin-left: 4%;
+  }
+  
+  .additionally {
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    top:0;
-    right: 0; 
-}
+  }
   
-.h1{
-    font-size: 30px;
-}
-
-.technology-text {
-    padding:6%;
-    font-size: 20px;
-    text-align: justify;
+  li {
+    font-size: 18px;
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  li:before {
+    content: '\2022';
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  /* Dostosowanie na mniejsze ekrany */
+  
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+  
+    .column {
+      width: 100%;
+    padding: 10px 0;
+    margin-left: 0;
+    text-align: center;
     line-height: 1.4;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
-
-@media screen and (min-width: 376px) and (max-width: 420px){
   
-  .technology-content{
-    position: absolute;
-    padding-left: 2%;
-    top:10%;
-  }
-   
-  .spline-container-technology{
-      display: none;
-  }
-    
-  .technology-text {
-      padding:9%;
-      font-size: 13px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 375px){
- 
-  .technology-content{
-    position: absolute;
-    padding-left: 2%;
-    top:7%;
-  }
-   
-  .spline-container-technology{
-      display: none;
-  }
-    
-  .technology-text {
-      padding:9%;
-      font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 319px){
-
-  .technology-content{
-    position: absolute;
-    padding-left: 2%;
-    top:8%;
-  }
-   
-  .spline-container-technology{
-      display: none;
-  }
-    
-  .technology-text {
-      padding:9%;
-      font-size: 10px;
-  }
-}

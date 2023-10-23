@@ -3,7 +3,6 @@ import NavBar from "../NavBar/NavBar";
 import WelcomeSection from '../WelcomeSection/WelcomeSection';
 import WorkSection from '../WorkSection/WorkSection';
 import TechnologySection from '../TechnologySection/TechnologySection';
-import ContactSection from '../ContactSection/ContactSection';
 import Header from "../Header/Header";
 
 const LandingPage = () => {
@@ -14,7 +13,6 @@ const LandingPage = () => {
         <WelcomeSection />
         <WorkSection/>
         <TechnologySection />
-        <ContactSection />
     </div>
   );
 };

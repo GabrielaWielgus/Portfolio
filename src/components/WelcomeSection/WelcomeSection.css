@@ -1,232 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue';
-    letter-spacing: 0.24px;
+.welcome-section {
+    margin-top: 15%;
+    padding: 5% 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    max-width: 100%; 
+    box-sizing: border-box; 
 }
 
-section{
-    position: relative;
-    height: 100vh; 
-    padding-top: 100px;
-    padding-bottom: 40px;
+.welcome-section h1 {
+    font-size: 5vw; 
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 2vw; 
+    display: block;
+    color: white;
+    margin-left: 5%;
+    width: 70%;
 }
 
-.spline-container{
-    height: 130%;
-   
+.welcome-section p {
+    color: #B8B8B8;
+    font-size: 1.5vw; 
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    text-align: justify;
+    max-width: 50%; 
+    padding: 2vw; 
+    margin-left: 3%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.wrapper{
-    display:inline-flex;
-    padding-left: 5%;
-}
-
-h1{
-    color:white;
-    font-size: 73px;
-    font-weight: 400;
-    padding-top: 8%;
-    padding-left: 5%;
-}
-
-.wrapper .static-txt{
-    color:white;
-    font-size: 73px;
-    font-weight: 400;
-}
-
-.wrapper .dynamic-txts{
-    margin-left: 15px;
-    height: 90px;
-    line-height: 90px;
-    overflow: hidden;
-}
-
-.dynamic-txts li{
-    color:#CCFC9D;
-    list-style: none;
-    font-size: 73px;
-    font-weight: 500;
-    position: relative;
-    top:0;
-    animation: slide 12s steps(4) infinite;
-}
-
-@keyframes slide{
-    100%{
-        top:-360px;
-    }
-}
-
-.dynamic-txts li span{
-    position: relative;
-}
-
-.dynamic-txts li span::after{
-    content:"";
+.welcome-section img {
     position: absolute;
-    left:0;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    border-left: 2px solid #fff;
-    animation: typing 3s steps(15) infinite;
+    left: 20%;
+    top: 25%;
+    width: 80%;
+    max-width: 100%; 
+    z-index: -1;
 }
 
-@keyframes typing {
-    40%, 60%{
-      left: calc(100% + 30px);
+@media (max-width: 768px) {
+    .welcome-section{
+        margin-top: 30%;
     }
-    100%{
-      left: 0;
+    .welcome-section h1, .welcome-section p {
+        width: 90%; 
+        margin-left: 5%; 
     }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1300px){
-   
-    .spline-container{
-        height: 100%;
+    .welcome-section p {
+        margin-left: 3%; 
+        font-size: 2.8vw;
+        max-width: 100%;
     }
-}
-
-@media screen and (min-width: 700px) and (max-width: 1023px){
-   
-    h1{
-        padding-top:1%;
-        font-size: 35px;
-    }
-    .wrapper .static-txt{
-        
-        font-size: 35px;
-    }
-
-    .dynamic-txts li{
-        font-size: 35px;
-        height: 50px;
-    }
-    
-    .wrapper .dynamic-txts{
-        margin-left: 15px;
-        height: 50px;
-        line-height: 43px;
-    }
-
-    .spline-container{
-        height: 150%;
-        margin-top: 2%;
-        margin-left: -30%;
-    }
-    @keyframes slide{
-        100%{
-            top:-200px;
-        }
-    }
-}
-
-@media screen and (min-width: 376px) and (max-width: 699px){
-   
-    h1{
-        font-size: 39px;
-    }
-    .wrapper .static-txt{
-        
-        font-size: 39px;
-    }
-
-    .dynamic-txts li{
-        font-size: 35px;
-        height: 50px;
-    }
-    
-    .wrapper .dynamic-txts{
+    .welcome-section img {
         position: absolute;
-        top:39%;
-        margin-left: 0;
-        height: 50px;
-        line-height: 43px;
-    }
-
-    .spline-container{
-        height: 100%;
-        margin-top: 14%;
-        margin-left: -160%;
-    }
-    @keyframes slide{
-        100%{
-            top:-200px;
-        }
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 375px){
-   
-    h1{
-        font-size: 39px;
-    }
-    .wrapper .static-txt{
-        
-        font-size: 39px;
-    }
-
-    .dynamic-txts li{
-        font-size: 35px;
-        height: 50px;
-    }
-    
-    .wrapper .dynamic-txts{
-        position: absolute;
-        top:41%;
-        margin-left: 0;
-        height: 50px;
-        line-height: 43px;
-    }
-
-    .spline-container{
-        height: 106%;
-        margin-top: 16%;
-        margin-left: -190%;
-    }
-    @keyframes slide{
-        100%{
-            top:-200px;
-        }
-    }
-}
-
-@media screen and (max-width: 319px){
-   
-    h1{
-        font-size: 35px;
-    }
-    .wrapper .static-txt{
-        
-        font-size: 35px;
-    }
-
-    .dynamic-txts li{
-        font-size: 35px;
-        height: 50px;
-    }
-    
-    .wrapper .dynamic-txts{
-        position: absolute;
-        top:44%;
-        margin-left: 0;
-        height: 50px;
-        line-height: 43px;
-    }
-
-    .spline-container{
-        height: 110%;
-        margin-top: 14%;
-        margin-left: -180%;
-    }
-
-    @keyframes slide{
-        100%{
-            top:-200px;
-        }
+        left: 4%;
+        top: 50%;
+        width: 95%;
+        max-width: 100%; /* Maksymalna szerokość obrazka */
+        z-index: -1;
     }
 }

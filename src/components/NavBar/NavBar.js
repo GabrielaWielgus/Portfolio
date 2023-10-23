@@ -1,46 +1,44 @@
-import React, { useLayoutEffect, useState } from "react";
+import React from "react";
+import navIcon1 from '../../assets/img/nav-icon1.svg';
+import navIcon2 from '../../assets/img/nav-icon2.svg';
+import navIcon3 from '../../assets/img/nav-icon3.svg';
+import navIcon4 from '../../assets/img/nav-icon4.svg';
 import './NavBar.css';
 
 const NavBar = () => {
-    const [isContactSection, setIsContactSection] = useState(false);
+  const handleNavigation = (sectionID) => {
+      const section = document.getElementById(sectionID);
+      if (section) {
+          const offset = 40;
+          const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+              top: sectionTop - offset,
+              behavior: "smooth",
+          });
+      }
+  };
 
-    useLayoutEffect(() => {
-        const handleScroll = () => {
-            const contactSection = document.getElementById("contact-section");
-            if (contactSection) {
-                const rect = contactSection.getBoundingClientRect();
-                setIsContactSection(rect.top <= window.innerHeight && rect.bottom >= 0);
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
-    const handleNavigation = (sectionID) => {
-        const section = document.getElementById(sectionID);
-        if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
-    return (
-        <div className={`navbar-container ${isContactSection ? "black-bg" : ""}`}>
-            <header>
-                <nav>
-                    <ul className="menu">
-                        <li onClick={() => handleNavigation('welcome-section')}>Welcome</li>
-                        <li onClick={() => handleNavigation('work-section')}>Work</li>
-                        <li onClick={() => handleNavigation('technology-section')}>Technology</li>
-                        <li onClick={() => handleNavigation('contact-section')}>Contact</li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-    );
+  return (
+      <div className="navbar-container">
+          <header>
+              <nav className="navbar">
+                  <ul className="menu">
+                      <li onClick={() => handleNavigation('welcome-section')}>Welcome</li>
+                      <li onClick={() => handleNavigation('work-section')}>Work</li>
+                      <li onClick={() => handleNavigation('technology-section')}>Technology</li>
+                  </ul>
+                  <span className="navbar-text">
+                      <div className="social-icon">
+                          <a href="#"><img src={navIcon3} alt="" /></a>
+                          <a href="#"><img src={navIcon1} alt="" /></a>
+                          <a href="#"><img src={navIcon2} alt="" /></a>
+                          <a href="#"><img src={navIcon4} alt="" /></a>
+                      </div>
+                  </span>
+              </nav>
+          </header>
+      </div>
+  );
 }
 
 export default NavBar;
