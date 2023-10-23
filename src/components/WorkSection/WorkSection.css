@@ -9,9 +9,9 @@
 
 .work-section img {
   position: absolute;
-  left: 2%;
-  top: 99.5%;
-  width: 69%;
+  left: -10%;
+  margin-top: -53vh;
+  transform: scale(1);
   max-width: 100%;
   z-index: -1;
 }
@@ -21,11 +21,23 @@
   margin-left: 60%;
 }
 
+@media (min-width: 769px) and (max-width: 1300px) {
+  .work-section img{
+    position: absolute;
+    left: -10%;
+    top: 186%;
+  }
+  .work-content{
+    width: 100%;
+    margin-left: 50%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .work-section img{
     position: absolute;
     left: -10%;
-    top: 170%;
+    top: 220%;
   }
   .work-content{
     width: 100%;

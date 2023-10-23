@@ -9,7 +9,7 @@ const cardData = [
                 Since May 2021, I have been actively involved in various projects related to QoE, including 
                 "Your YouTube Our Lab" and "Your Netflix Our Lab." In the former, I published a research paper 
                 titled
-                "<a href="https://library.imaging.org/ei/articles/35/8/IQSP-261" target="_blank" rel="noopener noreferrer">
+                "<a href="https://library.imaging.org/ei/articles/35/8/IQSP-261" target="_blank" rel="noopener noreferrer" style={{ color: '#84C28C', textDecoration: 'none' }}>
                 Proposing more ecologically-valid experiment protocol using YouTube platform</a>",
                 which was accepted at the "Image Quality and System Performance XX" conference. Currently, 
                 I am analyzing data and preparing a journal publication for the latter project. Additionally, 

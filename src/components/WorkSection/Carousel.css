@@ -46,6 +46,12 @@ body{
     color: #1f2937;
 }
 
+.card p{
+    font-size: 1.2rem;
+    line-height: 1em;
+    margin: 0;
+}
+
 .card p,
 .card h2{
     transition: all 0.3s ease-out;
@@ -53,7 +59,6 @@ body{
 }
 
 .nav{
-    
     color:rgb(255, 255, 255);
     margin-inline: 1rem;
     font-size: 5rem;
@@ -77,14 +82,42 @@ body{
     transform: translateX(100%) translateY(-50%);
 }
 
+@media (min-width: 769px) and (max-width: 1300px) {
+    .carousel {
+        width: 90%; 
+        top: -20vh; 
+    }
+
+    .nav {
+        top: 9rem; 
+        margin-inline: 1.4rem;
+    }
+
+    .card h2{
+        font-size: 1.5rem;
+    }
+
+    .card p{
+        font-size: 0.9rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .carousel {
         width: 90%; 
-        top: -40vh; 
+        top: -30vh; 
     }
 
     .nav {
         top: 14rem; 
         margin-inline: 2.4rem;
+    }
+
+    .card h2{
+        font-size: 1.5rem;
+    }
+
+    .card p{
+        font-size: 0.9rem;
     }
 }

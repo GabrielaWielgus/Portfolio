@@ -4,7 +4,6 @@ import cardData from './cardData';
 
 import { TiChevronLeftOutline, TiChevronRightOutline } from 'https://cdn.skypack.dev/react-icons/ti';
 
-const CARDS = 10;
 const MAX_VISIBLE = 3;
 
 const Card = ({ title, content }) => (
