@@ -25,14 +25,15 @@ const NavBar = () => {
                   <ul className="menu">
                       <li onClick={() => handleNavigation('welcome-section')}>Welcome</li>
                       <li onClick={() => handleNavigation('work-section')}>Work</li>
-                      <li onClick={() => handleNavigation('technology-section')}>Technology</li>
+                      <li onClick={() => handleNavigation('technology-section')}>Skills</li>
+                      <li onClick={() => handleNavigation('projects-section')}>Projects</li>
                   </ul>
                   <span className="navbar-text">
                       <div className="social-icon">
-                          <a href="#"><img src={navIcon3} alt="" /></a>
-                          <a href="#"><img src={navIcon1} alt="" /></a>
-                          <a href="#"><img src={navIcon2} alt="" /></a>
-                          <a href="#"><img src={navIcon4} alt="" /></a>
+                          <a href="mailto:gabwielgus@gmail.com"><img src={navIcon3} alt="" /></a>
+                          <a href="https://www.behance.net/gabrielawielgus1"><img src={navIcon1} alt="" /></a>
+                          <a href="https://www.linkedin.com/in/gabriela-wielgus"><img src={navIcon2} alt="" /></a>
+                          <a href="https://github.com/GabrielaWielgus"><img src={navIcon4} alt="" /></a>
                       </div>
                   </span>
               </nav>
