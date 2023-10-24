@@ -1,4 +1,4 @@
-// data.js
+
 const cardData = [
     {
         title: "Young Researcher",

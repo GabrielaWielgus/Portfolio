@@ -1,5 +1,4 @@
 import React from 'react';
-import './TechnologySection.css';
 import SkillsSection from './SkillsSection';
 
 const TechnologySection = () => {

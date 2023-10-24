@@ -1,5 +1,4 @@
 import React from 'react';
-import './WorkSection.css';
 import plant from '../../assets/img/plant.svg';
 import RenderCarousel from './Card';
 

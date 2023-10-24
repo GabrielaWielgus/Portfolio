@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './Carousel.css';
 import cardData from './cardData';
 
-import { TiChevronLeftOutline, TiChevronRightOutline } from 'https://cdn.skypack.dev/react-icons/ti';
+import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
+
 
 const MAX_VISIBLE = 3;
 

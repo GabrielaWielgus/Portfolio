@@ -4,6 +4,7 @@ import WelcomeSection from '../WelcomeSection/WelcomeSection';
 import WorkSection from '../WorkSection/WorkSection';
 import TechnologySection from '../TechnologySection/TechnologySection';
 import Header from "../Header/Header";
+import Projects from "../Projects/Projects";
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
         <WelcomeSection />
         <WorkSection/>
         <TechnologySection />
+        <Projects />
     </div>
   );
 };
