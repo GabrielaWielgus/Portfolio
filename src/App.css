@@ -1,3 +1,4 @@
+
 /* Welcome Section */
 
 .welcome-section {
@@ -22,7 +23,7 @@
     display: block;
     color: white;
     margin-left: 5%;
-    width: 100%;
+    width: 90%;
     position: absolute;
     top: 10%;
 }
@@ -45,14 +46,15 @@
 
 .welcome-section img {
     position: absolute;
-    left: 15%;
+    left: 12%;
     top: 20%;
     width: 100%;
     max-width: 100%;
     z-index: -1;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 515px) {
     .welcome-section h1 {
         font-size: 10vw;
         max-width: 95%;
@@ -325,9 +327,9 @@ nav ul li.active {
     }
     .work-content {
         position: absolute;
-        width: 75%;
+        width: 70%;
         top: 35%;
-        left: -39%;
+        left: -30%;
     }
 }
 
@@ -344,6 +346,7 @@ body {
     position: relative;
     top: -15vh;
     max-width: 100%;
+    left: -10%;
     width: 35rem;
     perspective: 500px;
     transform-style: preserve-3d;
@@ -513,7 +516,7 @@ body {
     margin-bottom: 20px;
     text-align: left;
     line-height: 1.4;
-    font-size: 40px;
+    font-size: 4vh;
 }
 
 .column:nth-child(2) {
@@ -526,7 +529,7 @@ body {
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 5vh;
     margin-bottom: 20px;
 }
 
@@ -537,11 +540,11 @@ ul {
 }
 
 li {
-    font-size: 25px;
+    font-size: 2.5vh;
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     position: relative;
-    padding-left: 20px;
+    padding-left: 1vh;
 }
 
 @media (max-width: 768px) {
@@ -957,3 +960,5 @@ li {
       font-size: 14px;
     }
   }
+
+ 
