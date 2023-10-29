@@ -448,21 +448,21 @@ body {
 
 @media (min-width: 391px) and (max-width: 759px) {
     .carousel {
-        width: 70%;
+        width: 80%;
         top:auto;
-        left: 10%;
+        left: 0%;
     }
 
-    .carousel img{
+    .carousel img {
         width: 30px;
         height: 30px;
     }
-
     .nav {
         color: rgb(255, 255, 255);
-        margin-top: 15%;
-        width: 60%;
-        left: 45%;
+        font-size: 3rem;
+        margin-top: 25%;
+        width: 62%;
+        left: 42%;
     }
 
     .card h2 {
@@ -470,7 +470,7 @@ body {
     }
 
     .card p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
