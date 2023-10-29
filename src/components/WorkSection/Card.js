@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import cardData from './cardData';
 
-import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
+//import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
+
+import navLeft from '../../assets/img/chevron-left-solid.svg';
+import navRight from '../../assets/img/chevron-right-solid.svg';
 
 
 const MAX_VISIBLE = 3;
@@ -22,7 +25,7 @@ const Carousel = ({ children }) => {
             {active > 0 && (
                 <button className='nav left' onClick={() =>
                 setActive((i) => i - 1)}>
-                    <TiChevronLeftOutline />
+                    <img src={navLeft} alt="" />
                 </button>
             )}
             {React.Children.map(children, (child, i) => (
@@ -44,7 +47,7 @@ const Carousel = ({ children }) => {
             {active < count - 1 && (
                 <button className='nav right' onClick={() =>
                 setActive((i) => i + 1)}>
-                    <TiChevronRightOutline />
+                    <img src={navRight} alt="" />
                 </button>
             )}
         </div>
