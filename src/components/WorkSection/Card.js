@@ -66,5 +66,3 @@ const RenderCarousel = () => (
 );
 
 export default RenderCarousel;
-
-
