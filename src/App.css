@@ -420,10 +420,10 @@ body {
 
     .nav {
         color:rgb(165, 168, 144);
-        margin-top: 0%;
-        left: 40%;
-        margin-right: 30%;
-        margin-left: -24%;
+        margin-top: 50%;
+        left: 45%;
+        margin-right: 11vh;
+        margin-left: -10vh;
         z-index: 999;
     }
 
