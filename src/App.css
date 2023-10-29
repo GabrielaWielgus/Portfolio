@@ -66,7 +66,7 @@
 
     .welcome-section img {
         position: absolute;
-        top: 65%;
+        top: 68%;
         left: 0;
         width: 100%;
         max-width: 100%;
@@ -223,7 +223,7 @@ nav ul li.active {
         height: 40px;
         position: fixed;
         top: 2.8vh; 
-        left: 30px; 
+        left: 20px; 
         transition: transform 0.3s ease;
     }
 
@@ -414,16 +414,17 @@ body {
 
 @media screen and (max-width: 768px) {
     .carousel {
-        width: 100%;
+        width: 90%;
         top:auto;
     }
 
     .nav {
         color:rgb(165, 168, 144);
-        margin-top: 20%;
+        margin-top: 0%;
         left: 40%;
         margin-right: 30%;
         margin-left: -24%;
+        z-index: 999;
     }
 
     .card h2 {
