@@ -419,18 +419,23 @@ body {
     transform: translateX(100%) translateY(-50%);
 }
 
-@media (min-width: 769px) and (max-width: 1300px) {
+@media (min-width: 376px) and (max-width: 1300px) {
     .carousel {
-        width: 70%;
-        top: -20vh;
+        width: 100%;
+        top:auto;
     }
 
     .nav {
-        margin-top: 15%;
+        color:rgb(165, 168, 144);
+        margin-top: 30%;
+        left: 1%;
+        margin-right: 12vh;
+        margin-left: 6.5vh;
+        z-index: 999;
     }
 
     .card h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .card p {
@@ -438,27 +443,27 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .carousel {
-        width: 90%;
+        width: 100%;
         top:auto;
     }
 
     .nav {
         color:rgb(165, 168, 144);
-        margin-top: 50%;
-        left: 45%;
-        margin-right: 11vh;
-        margin-left: -10vh;
+        margin-top: 30%;
+        left: 1%;
+        margin-right: 15vh;
+        margin-left: 8vh;
         z-index: 999;
     }
 
     .card h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .card p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -679,6 +684,9 @@ li {
   
   /* Nav Bar Landscape */
   @media screen and (orientation: landscape) {
+    .menu {
+        height: 100vh;
+    }
     nav{
         height: 4.5rem;
     }
@@ -692,44 +700,114 @@ li {
       margin-left: 80px;
     }
   }
-  
-  /* Work Section Landscape */
-  @media screen and (orientation: landscape) {
+
+/* Landscape Styles for 740x360 */
+@media screen and (min-width: 740px) and (max-height: 360px) and (orientation: landscape) {
     .work-section {
-      margin-left: -40%;
+        margin-left: 0%;
+    }
+
+    .work-section img {
+        left: -3rem;
+        width: 50%;
+    }
+
+    .work-content {
+        width: 100%;
+    }
+
+    .carousel {
+        top: -5rem;
+        left: -3rem;
+        width: 28rem;
+    }
+
+    .nav {
+        margin-top: 20%;
+        color: rgb(255, 255, 255);
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 0.7rem;
+    }
+}
+
+/* Landscape Styles for 844x390 */
+@media screen and (min-width: 844px) and (max-height: 390px) and (orientation: landscape) {
+    .work-section {
+        margin-left: 0%;
+    }
+
+    .work-section img {
+        left: -10rem;
+        width: 90%;
+    }
+
+    .work-content {
+        width: 100%;
+    }
+
+    .carousel {
+        top: -8rem;
+        left: -10rem;
+        width: 30rem;
+    }
+
+    .nav {
+        margin-top: 20%;
+        color: rgb(255, 255, 255);
+    }
+
+    .card h2 {
+        font-size: 1.6rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+}
+  
+   /* Landscape Styles for 667x375 and larger */
+@media screen and (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+    .work-section {
+      margin-left: 0%;
     }
   
     .work-section img {
-      left: 12%;
-      width: 60%;
+      left: -2rem;
+      width: 50%;
     }
   
     .work-content {
-      width: 100%;
+      width: 80%;
     }
-  }
   
-  /* Work Section Carousel Landscape */
-  @media screen and (orientation: landscape) {
     .carousel {
-      top: -35vh;
-      left: -15vh;
-      width: 30rem;
+      top: -5.5rem;
+      left: -1rem;
+      width: 28rem;
     }
-  
+
     .nav {
       margin-top: 20%;
+      left: 13%;
+      margin-right: 33vh;
+      color: white;
     }
   
     .card h2 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   
     .card p {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
   }
-  
+
   /* Skills Section Landscape */
   @media screen and (orientation: landscape) {
     .skills-container {
@@ -740,7 +818,7 @@ li {
   
     .column {
       width: calc(33.33% - 20px); 
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
   
     .column:nth-child(2) {
@@ -754,7 +832,7 @@ li {
   
     h3 {
       font-size: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
   
     ul {
@@ -765,7 +843,7 @@ li {
   
     li {
       font-size: 13px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       padding-left: 0px;
       position: relative;
     }
