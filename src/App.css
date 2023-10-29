@@ -496,52 +496,19 @@ li {
 
 @media (max-width: 768px) {
     .technology-section {
-        text-align: center;
-        padding: 20px;
-        height: 150vh;
-    }
-
-    .skills-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .column {
-        width: 100%;
-        margin: 0;
-        text-align: left;
-        font-size: 23px;
-        padding: 10px 0;
-    }
-
-    .column:nth-child(2) {
-        margin-left: 0;
+        margin-left: 0%;
+        padding: 0px;
     }
 
     h3 {
-        font-size: 23px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 5px;
     }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
+    
     li {
-        font-size: 16px;
-        margin-bottom: 10px;
-        position: relative;
+        font-size: 15px;
+        margin-bottom: 5px;
         padding-left: 0px;
-    }
-
-    .additionally {
-        margin-bottom: 10px;
-        position: relative;
-        padding-left: 0px;
-        text-align: left;
     }
 }
 
