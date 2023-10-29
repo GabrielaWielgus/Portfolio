@@ -344,10 +344,10 @@ body {
 
 .carousel {
     position: relative;
-    top: -15vh;
+    top: -10vh;
     max-width: 100%;
-    left: -10%;
-    width: 35rem;
+    left: -30%;
+    width: 100%;
     perspective: 500px;
     transform-style: preserve-3d;
 }
@@ -402,7 +402,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-top: 25%;
+    margin-top: 15%;
     width: 60%;
     left: 20%;
     margin-right: 0%;
@@ -418,7 +418,6 @@ body {
     transform: translateX(-100%) translateY(-50%);
 }
 .nav.right {
-    right: 0;
     transform: translateX(100%) translateY(-50%);
 }
 
