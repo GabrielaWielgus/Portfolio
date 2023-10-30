@@ -25,7 +25,7 @@ const cardData = [
         content: (
             <div>
                 <p>
-                My primary passion lies in UX/UI design. By incorporating the concept of Quality of Experience (QoE) into my research, I strive to connect technical performance with user perception. My ultimate goal is to enhance UX/UI design and create more enjoyable and meaningful experiences for users. I specialize in creating mockups for both mobile and web applications using tools like Adobe XD or Figma. Additionally, I have a strong interest in drawing, and I utilize Photoshop to bring my sketch-based projects to life.
+                My primary passion lies in UX/UI design. By incorporating the concept of Quality of Experience (QoE) into my research, I strive to connect technical performance with user perception. <br/> My ultimate goal is to enhance UX/UI design and create more enjoyable and meaningful experiences for users. I specialize in creating mockups for both mobile and web applications using tools like Adobe XD or Figma. Additionally, I have a strong interest in drawing, and I utilize Photoshop to bring my sketch-based projects to life.
                 </p>
             </div>
         )
@@ -55,7 +55,7 @@ const cardData = [
         content: (
             <div>
                 <p>
-                For five years, I worked as an <b>Administrative Office Specialist</b>, managing two companies as a Manager. <br />
+                For five years, I worked as an Administrative Office Specialist, managing two companies as a Manager. 
                 In my role, I coordinated teams and office operations, handling a wide range of administrative tasks. I had the opportunity to handle comprehensive documentation, regularly undergoing compliance checks with the Regulation of the Minister of Infrastructure and Construction of June 22, 2017, regarding driver training center inspections.
                 </p>
             </div>
